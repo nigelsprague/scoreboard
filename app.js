@@ -2,10 +2,9 @@ console.log(':-)')
 
 let homeScore = 0
 let awayScore = 0
-// let home1 = document.getElementById('home1')
-// let home3 = document.getElementById('home3')
-// let away1 = document.getElementById('away1')
-// let away3 = document.getElementById('away3')
+
+function scorePoints(team, points) {
+  if (team == )}
 
 function scoreHome(points) {
   homeScore += points
@@ -30,4 +29,10 @@ function resetPoints() {
   awayScore = 0
   updateScores()
   console.log('RESET')
+}
+
+function gameEnd() {
+  if (homeScore >= 11) {
+    document.getElementById('gameEnd')
+  }
 }
