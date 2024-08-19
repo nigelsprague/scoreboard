@@ -12,7 +12,7 @@
 
 <body class="bg-dark container">
   <section class="row">
-    <div class="col btn bg-danger">reset</div>
+    <div onclick="resetPoints()" class="col btn bg-danger">reset</div>
   </section>
   <main class="container">
     <section class="row">
@@ -26,12 +26,12 @@
   </main>
   <section class="row">
     <div class="col">
-      <div class="btn">home +1</div>
-      <div class="btn">home +3</div>
+      <div onclick="scorePoints()" class="btn">home +1</div>
+      <div onclick="scorePoints()" class="btn">home +3</div>
     </div>
     <div class="col">
-      <div class="btn">away +1</div>
-      <div class="btn">away +3</div>
+      <div onclick="scorePoints()" class="btn">away +1</div>
+      <div onclick="scorePoints()" class="btn">away +3</div>
     </div>
   </section>
 
