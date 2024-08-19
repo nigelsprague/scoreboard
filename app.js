@@ -28,7 +28,6 @@ function updateScores() {
 function resetPoints() {
   homeScore = 0
   awayScore = 0
-  document.getElementById('homeCard').innerText = homeScore
-  document.getElementById('awayCard').innerText = awayScore
+  updateScores()
   console.log('RESET')
 }
