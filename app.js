@@ -1,9 +1,8 @@
-console.log(':-)')
-
 let homeScore = 0
 let awayScore = 0
 const homeWin = 'Home Team Wins!'
 const awayWin = 'Away Team Wins!'
+const gameEndPoints = 11
 
 function scorePoints(team, points) {
   if (team == 'home') {
@@ -38,14 +37,17 @@ function updateScores() {
 function resetPoints() {
   homeScore = 0
   awayScore = 0
-  updateScores()
   console.log('RESET')
+  updateScores()
 }
 
+// NOTE not sure why the alert is not working, read on the topic but still can't seem to figure it
 function gameEnd() {
-  if (homeScore >= 11) {
+  if (homeScore >= gameEndPoints) {
+    console.log(homeWin)
     alert(homeWin)
-  } else if (awayScore >= 11) {
+  } else if (awayScore >= gameEndPoints) {
+    console.log(awayWin)
     alert(awayWin)
   }
 }
