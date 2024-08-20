@@ -2,6 +2,8 @@ console.log(':-)')
 
 let homeScore = 0
 let awayScore = 0
+const homeWin = 'Home Team Wins!'
+const awayWin = 'Away Team Wins!'
 
 function scorePoints(team, points) {
   if (team == 'home') {
@@ -42,25 +44,9 @@ function resetPoints() {
 
 function gameEnd() {
   if (homeScore >= 11) {
-    console.log('end')
-    document.getElementById('gameEnd').innerText = 'Home Team Wins!'
-    document.getElementById('gameEnd')
-    element.classList.remove('d-none')
-    document.getElementById('reset')
-    element.classList.add('d-none')
-    // } else if (awayScore >= 11) {
-    //   document.getElementById('gameEnd').innerText = 'Away Team Wins!'
-    //   document.getElementById('gameEnd')
-    //   element.classList.remove('d-none')
-    //   document.getElementById('reset')
-    //   element.classList.add('d-none')
+    alert
+    window.alert(homeWin)
+  } else if (awayScore >= 11) {
+    window.alert(awayWin)
   }
-}
-
-function playAgain() {
-  document.getElementById('reset')
-  element.classList.remove('d-none')
-  document.getElementById('gameEnd')
-  element.classList.add('d-none')
-  resetPoints()
 }
