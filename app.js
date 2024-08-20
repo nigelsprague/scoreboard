@@ -44,9 +44,8 @@ function resetPoints() {
 
 function gameEnd() {
   if (homeScore >= 11) {
-    alert
-    window.alert(homeWin)
+    alert(homeWin)
   } else if (awayScore >= 11) {
-    window.alert(awayWin)
+    alert(awayWin)
   }
 }
